@@ -118,14 +118,14 @@ def LogLikelihood_modelC(df, sigma_d, sigma_m, Lambda):
 # Plot psychometric curve for hte 'control' and 'manipulation' conditions
 def plot_data_psychometric(df):
     mask = df.condition=='control'
-    df[mask].groupby('stimulus').response.agg(('mean','sem')).plot(yerr='sem', fmt = 'bo', ax=plt.gca(), legend=False);
+    df[mask].groupby('stimulus').response.agg(('mean','sem')).plot(yerr='sem', fmt = 'bo', ax=plt.gca(), legend=True);
 
     mask = df.condition=='manipulation'
-    df[mask].groupby('stimulus').response.agg(('mean','sem')).plot(yerr='sem', fmt = 'ro', ax=plt.gca(), legend=False);
-
+    df[mask].groupby('stimulus').response.agg(('mean','sem')).plot(yerr='sem', fmt = 'ro', ax=plt.gca(), legend=True);
+    plt.legend(['Control Data', 'Manipulation Data'], loc="best")
 
 # Plot the model fit
-def plot_model(p_model):
+def plot_model(p_model, model_name=None):
     # define 100 angle points linearly spaced between -3 and 3
     s_linspace = np.linspace(-3,3,100)
     
@@ -136,5 +136,8 @@ def plot_model(p_model):
     plt.plot(s_linspace, p_standard, 'b', label="control")
     plt.plot(s_linspace, p_manipulation, 'r', label="manipulation")
     
+    plt.xlabel('Stimulus Evidence')
     plt.ylabel('p(rightward)')
-
+    plt.legend(loc="best")
+    plt.title(f'Psychometric Curve - {model_name}')
+    plt.show
