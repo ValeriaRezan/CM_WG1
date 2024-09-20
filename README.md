@@ -5,7 +5,7 @@ Perception Decision Making
 
 Authors: Valeria Rezan, Beyza Celep, Matiss Kalnare, Catherine Smeyers
 
-Files Overview
+# Files Overview
 
 tutorial_1A.ipynb: Model definition, simulation and comparison.
 
