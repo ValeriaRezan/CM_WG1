@@ -29,6 +29,7 @@ How to run
 To run this project, ensure you have the following installed:
 
 -- Python 3.x
+
 -- Jupyter Notebook (or VSCode with Jupyter extension)
 
 # SETTING UP THE ENVIRONMENT
