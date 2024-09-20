@@ -32,9 +32,11 @@ To run this project, ensure you have the following installed:
 
 -- Jupyter Notebook (or VSCode with Jupyter extension)
 
+-- Clone this repository
+
 # SETTING UP THE ENVIRONMENT
 
-To ensure that all dependencies are properly installed, follow these steps to set up a virtual environment:
+To ensure that all dependencies are properly installed, follow these steps to set up a virtual environment (optional, but recommended):
 
 # 1. Create and Activate a New Virtual Environment
 
