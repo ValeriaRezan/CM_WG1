@@ -2,6 +2,7 @@ Cognitive Modelling, 2024
 Assignment 1
 
 Perception Decision Making
+
 Authors: Valeria Rezan, Beyza Celep, Matiss Kalnare, Catherine Smeyers
 
 Files Overview
@@ -29,28 +30,36 @@ To run this project, ensure you have the following installed:
 -- Python 3.x
 -- Jupyter Notebook (or VSCode with Jupyter extension)
 
-SETTING UP THE ENVIRONMENT
+# SETTING UP THE ENVIRONMENT
+
 To ensure that all dependencies are properly installed, follow these steps to set up a virtual environment:
 
 # 1. Create and Activate a New Virtual Environment
 
   USING conda
+  
   Create a new conda environment
+  
   conda create --name <env_name> python=3.x
 
    Activate the environment
+   
   conda activate <env_name>
 
   OR USING venv
   
   Create a virtual environment
+  
   python -m venv <env_name>
 
   Activate the environment
+  
   On Windows
+  
   <env_name>\Scripts\activate
 
   On macOS/Linux
+  
   source <env_name>/bin/activate
 
 # 2. Install the Required Dependencies
